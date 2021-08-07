@@ -1,0 +1,389 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+body {
+  line-height: 1;
+  font-family: "Barlow", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+/****======Header========*****/
+.navigation {
+  padding: 5px 0;
+}
+
+.navigation .navbar-nav {
+  text-align: center;
+}
+
+.nav-link h2:hover {
+  color: #025fd3;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: 150px;
+  }
+  .nav-item {
+    padding-left: 30px;
+  }
+}
+/*********+++++++++-------Ex. Upload----------++++++++******/
+.user-profile {
+  margin-top: 15px;
+}
+.user-profile .header {
+  font-size: 25px;
+  text-align: center;
+}
+.user-profile .axes {
+  font-size: 20px;
+  text-align: center;
+  color: #333333;
+  font-weight: 300;
+  margin-top: 5px;
+}
+.axess {
+  width: 50%;
+  height: 15%;
+  margin-left: 25%;
+  border: 3px solid #cad3ff;
+  background-color: #5672f9;
+  color: white !important;
+  border-radius: 25px;
+}
+/* .show {
+  height: 100%;
+  width: 100%;
+} */
+.fa-file-image:hover {
+  cursor: pointer;
+}
+/*********+++++++++-------FOOTER----------++++++++******/
+
+.widget {
+  background: #fff;
+
+  padding: 25px 30px 30px;
+  margin-bottom: 0px;
+  border-radius: 2px;
+}
+.welcome-message {
+  margin-top: -10px;
+}
+.widget .widget-header {
+  display: block;
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #dedede;
+  margin-top: -50px;
+}
+.widget p {
+  font-size: 20px;
+  color: red;
+  line-height: 120%;
+}
+
+@media (max-width: 768px) {
+  div .warning2 {
+    margin-top: -15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .imgS {
+    height: 256px;
+  }
+}
+
+/*+++++==========upload IMG==========+++++++*/
+/*just bg and body style*/
+.center {
+  text-align: center;
+}
+.btn-container {
+  background: #fff;
+  border-radius: 5px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.imgupload {
+  color: #1e2832;
+  padding-top: 0px;
+  font-size: 4em;
+}
+#namefile {
+  /* color: black; */
+  color: red;
+}
+
+.btn-primary {
+  border-color: #1e2832 !important;
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #1e2832 !important;
+  border-color: #1e2832 !important;
+}
+.btn-transparent {
+  background: transparent;
+  color: #5672f9;
+  border: 1px solid #5672f9;
+  font-size: 30px;
+}
+
+.btn-transparent:hover {
+  background: #082de1;
+  color: #fff;
+}
+/*these two are set to not display at start*/
+.imgupload.ok {
+  display: none;
+  color: green;
+}
+.imgupload.stop {
+  display: none;
+  color: red;
+}
+
+/*this sets the actual file input to overlay our button*/
+#fileup {
+  opacity: 0;
+  -moz-opacity: 0;
+  filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+  width: 200px;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 40px;
+  height: 50px;
+}
+
+/*switch between input and not active input*/
+.submit {
+  text-align: center;
+}
+#submitbtn {
+  padding: 5px 50px;
+  display: none;
+}
+#fakebtn {
+  padding: 5px 40px;
+}
+
+.widget.show-img,
+.selectSubmit {
+  visibility: hidden;
+}
+/*-------------radio style------------------*/
+
+.radio_style {
+  padding-bottom: 20px;
+}
+
+@media (max-width: 575.98px) {
+  .radio_style label {
+    font-size: 17px;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .radio_style label {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+}
+@media (min-width: 1200px) {
+  .radio_style label {
+    font-size: 20px;
+  }
+}
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+@keyframes click-wave {
+  0% {
+    height: 40px;
+    width: 40px;
+    opacity: 0.35;
+    position: relative;
+  }
+  100% {
+    height: 200px;
+    width: 200px;
+    margin-left: -80px;
+    margin-top: -80px;
+    opacity: 0;
+  }
+}
+
+.option-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 13.33333px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 0.5rem;
+  outline: none;
+  position: relative;
+  z-index: 1000;
+}
+.option-input:hover {
+  background: #9faab7;
+}
+.option-input:checked {
+  background: #5672f9;
+}
+.option-input:checked::before {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  content: "✔";
+  display: inline-block;
+  font-size: 26.66667px;
+  text-align: center;
+  line-height: 40px;
+}
+.option-input:checked::after {
+  -webkit-animation: click-wave 0.65s;
+  -moz-animation: click-wave 0.65s;
+  animation: click-wave 0.65s;
+  background: #40e0d0;
+  content: "";
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+.option-input.radio {
+  border-radius: 50%;
+}
+.option-input.radio::after {
+  border-radius: 50%;
+}
+
+@media (min-width: 576px) {
+  .msg {
+    /* font-size: 15px; */
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .msg {
+    /* font-size: 20px; */
+    font-size: 1.3rem;
+  }
+}
+.alert {
+  height: 50px;
+  margin-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .classDisease {
+    font-size: 27px;
+  }
+}
+
+/*+++++==========FOOTER==========+++++++*/
+/******Top to==========******/
+
+.top-to a {
+  width: 40px;
+  top: 50%;
+  height: 40px;
+  background: #025fd3;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-left: 95%;
+}
+
+.top-to a i {
+  line-height: 40px;
+}
+
+.top-to a:hover {
+  text-decoration: none;
+  background-color: black;
+}
+
+.footer-bottom {
+  position: relative;
+  background: #363839;
+  padding: 20px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer-bottom .copyright p {
+  color: #c7c7c7;
+  margin-bottom: 0px;
+  margin-top: -15px;
+  text-align: center;
+  font-size: 17px;
+}
+
+@media (max-width: 480px) {
+  .footer-bottom {
+    text-align: center;
+  }
+}
+
+/* 
+.footer-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+} */

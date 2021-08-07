@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+body {
+  line-height: 1;
+  /* font-family: "Barlow", sans-serif; */
+  font-family: "Kanit", sans-serif;
+}
+* {
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  font-family: "Barlow", sans-serif;
+}
+
+h1 {
+  font-size: 35px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+}
+
+.goClasses {
+  display: none;
+}
+/****======Header========*****/
+.navigation {
+  padding: 5px 0;
+}
+
+.navigation .navbar-nav {
+  text-align: center;
+}
+
+.nav-link h2:hover {
+  color: #025fd3;
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+@media (min-width: 992px) {
+  .navbar-nav {
+    margin-left: 150px;
+  }
+  .nav-item {
+    padding-left: 30px;
+  }
+}
+/*+++++==========Title Main==========+++++++*/
+.title_main {
+  background-color: #1761a0;
+  text-align: center;
+  color: #fff;
+}
+.title_main .title h1 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+/*+++++==========product-slider==========+++++++*/
+/* .product-slider img {
+  max-width: 50%;
+  height: auto;
+} */
+.product-slider {
+  padding: 40px 0;
+}
+
+.product-slider .carousel-indicators li {
+  background: #888;
+}
+
+.product-slider .carousel-indicators li.active {
+  background: red;
+}
+
+@media (max-width: 768px) {
+  .product-details {
+    margin-top: 7%;
+  }
+  .product-slider img {
+    width: 340px;
+    height: 225px;
+  }
+  .product-slider .slick-dots {
+    display: flex;
+    bottom: -15%;
+    left: 15%;
+  }
+
+  .product-slider .slick-dots li {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+  }
+
+  .product-slider .slick-dots li img {
+    max-width: 95%;
+    height: 40px;
+  }
+  p {
+    font-size: 17px;
+  }
+  .product-details .content .nav .nav-item .nav-link {
+    padding: 20px 30px;
+    border-radius: 0;
+    background: #fff;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 768px) {
+  .product-details {
+    margin-top: 7%;
+  }
+  .product-slider img {
+    width: 100%;
+    height: 320px;
+  }
+  .product-slider .slick-dots {
+    display: flex;
+    bottom: -22%;
+    left: 15%;
+  }
+
+  .product-slider .slick-dots li {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+  }
+
+  .product-slider .slick-dots li img {
+    max-width: 100%;
+    height: 90px;
+  }
+  p {
+    font-size: 20px;
+  }
+
+  .product-details .content .nav .nav-item .nav-link {
+    padding: 20px 30px;
+    border-radius: 0;
+    background: #fff;
+    font-size: 27px;
+  }
+}
+
+.product-details .content .nav .nav-item {
+  margin-right: 3px;
+}
+
+.product-details .content .nav .nav-item .nav-link {
+  padding: 20px 30px;
+  border-radius: 0;
+  background: #fff;
+}
+
+.product-details .content .nav .nav-item .nav-link:hover {
+  background: #5672f9;
+  color: #fff;
+}
+
+.product-details .content .nav .nav-item .nav-link.active {
+  background: #5672f9;
+}
+.product-details .tab-title {
+  border-bottom: 3px solid #dedede;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+.arrow-right,
+.arrow-left {
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  line-height: 35px;
+  background: #025fd3;
+  text-align: center;
+  color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+.arrow-right {
+  right: -18px;
+}
+
+.arrow-left {
+  left: -18px;
+}
+
+p.desDisease {
+  line-height: 1.1;
+}
+
+/*+++++==========FOOTER==========+++++++*/
+/******Top to==========******/
+
+.top-to a {
+  width: 40px;
+  top: 50%;
+  height: 40px;
+  background: #025fd3;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  margin-left: 95%;
+}
+
+.top-to a i {
+  line-height: 40px;
+}
+
+.top-to a:hover {
+  text-decoration: none;
+  background-color: black;
+}
+
+.footer-bottom {
+  position: relative;
+  background: #363839;
+  padding: 20px;
+}
+
+.footer-bottom .copyright p {
+  color: #c7c7c7;
+  margin-bottom: 0px;
+  margin-top: -15px;
+  text-align: center;
+  font-size: 18px;
+}
+
+@media (max-width: 480px) {
+  .footer-bottom {
+    text-align: center;
+  }
+}

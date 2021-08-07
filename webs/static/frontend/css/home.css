@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=KoHo:wght@700&display=swap');
+body {
+    line-height: 1;
+    font-family: "Barlow", sans-serif;
+}
+
+.body-wrapper {
+    background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 25px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 36px;
+}
+
+
+/****======Header========*****/
+
+.navigation {
+    padding: 5px 0;
+}
+
+.navigation .navbar-nav {
+    text-align: center;
+}
+
+.nav-link h2:hover {
+    color: #025fd3;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+@media (min-width: 992px) {
+    .navbar-nav {
+        margin-left: 150px;
+    }
+    .nav-item {
+        padding-left: 30px;
+    }
+}
+
+
+/*+++++==========Corn1==========+++++++*/
+
+.corn_1 {
+    color: #232425;
+    background-color: #d3e0e5;
+    /* background: url("/IMG/home/hero.jpg"); */
+}
+
+.text-font {
+    font-size: 35px;
+    font-family: 'KoHo', sans-serif;
+}
+
+.corn_1 .content p {
+    font-size: 30px;
+    font-weight: 100;
+}
+
+.type_corn {
+    margin-top: 35px;
+}
+
+.section-title {
+    position: relative;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.section-title h2 {
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.section-title p {
+    font-size: 20px;
+    line-height: 30px;
+    color: #848484;
+}
+
+.section-title h2:before {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -24px;
+    left: 0;
+    right: 0;
+    width: 127px;
+    height: 2px;
+    background-color: #e0e0e0;
+}
+
+.section-title h2:after {
+    content: " ";
+    display: block;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    right: 0;
+    width: 40px;
+    height: 5px;
+    background-color: #5672f9;
+}
+
+@media (min-width: 768px) {
+    .content {
+        margin-top: 45px;
+    }
+}
+
+@media (max-width: 768px) {
+    .corn_1 .content h1 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .corn_1 .content p {
+        font-size: 17px;
+    }
+}
+
+
+/*+++++==========Type Corn==========+++++++*/
+
+.type_corn {
+    margin-top: 50px;
+}
+
+.card-body p {
+    font-size: 18px;
+}
+
+.card-title {
+    color: #1761a0;
+}
+
+
+/*+++++==========Problem==========+++++++*/
+
+.problem {
+    margin-top: 40px;
+}
+
+.category-block {
+    box-shadow: 0px 7px 16px 0px #bcc8cc;
+    padding: 20px 25px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+    text-align: center;
+    border: 2px solid #dadada;
+}
+
+.category-block .header {
+    margin-bottom: 10px;
+    border-bottom: 6px solid #f4f7f9;
+}
+
+.category-block .header h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 5px;
+    color: #1761a0;
+}
+
+
+/*+++++==========FOOTER==========+++++++*/
+
+
+/******Top to==========******/
+
+.top-to a {
+    width: 40px;
+    top: 50%;
+    height: 40px;
+    background: #025fd3;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-left: 95%;
+}
+
+.top-to a i {
+    line-height: 40px;
+}
+
+.top-to a:hover {
+    text-decoration: none;
+    background-color: black;
+}
+
+.footer {
+    background: #232425;
+    position: fixed;
+}
+
+.footer-bottom {
+    position: relative;
+    background: #363839;
+    padding: 20px;
+}
+
+.footer-bottom .copyright p {
+    color: #c7c7c7;
+    margin-top: -15px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width: 480px) {
+    .footer-bottom {
+        text-align: center;
+    }
+}
+
+p.lineH {
+    line-height: 1.2;
+}
+
+.text-primary2 {
+    color: rgb(4 75 137);
+}
+
+.text-danger2 {
+    /* color: #dd3f3a; */
+    color: #e12924;
+}
+
+.text-success2 {
+    color: #307630;
+}
+
+.text-brown {
+    color: #744015;
+}
+
+.text-brown2 {
+    color: #583314;
+}
+
+.text {
+    font-size: 18px;
+}
+
+.middle {
+    margin-left: 90px;
+}

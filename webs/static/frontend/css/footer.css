@@ -1,0 +1,32 @@
+@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 100vw;
+  padding-top: 10px;
+  background-color: #292c2f;
+  
+}
+
+footer p {
+  color: rgb(153, 24, 24);
+  text-decoration:none;
+  
+}
+
+.font{
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 300px;
+  }
+

@@ -1,0 +1,36 @@
+
+#showimg {
+    height: 400px;
+    width: 250px;
+}
+
+#getback {
+    position: fixed;
+    width: 200px;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.imagebanana{
+    width: 60%;
+    border-radius: 20px;
+}
+.imageguava{
+    width: 60%;
+    border-radius: 20px;
+}
+.imagepapaya{
+    width: 60%;
+    border-radius: 20px;
+}
+
+.responsive {
+    width: 100%;
+    height: auto;
+  }
