@@ -1,0 +1,225 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--Bootstrap-->
+  <!-- <link rel="stylesheet"  href="{% static 'frontend/bootstrap/css/bootstrap.min.css' %}"> -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="{% static 'frontend/slick-carousel/slick/slick.css' %}">
+  <link rel="stylesheet" href="{% static 'frontend/slick-carousel/slick/slick-theme.css' %}">
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="{% static 'fontawesome/css/all.min.css' %}" />
+  <link href="https://fonts.googleapis.com/css?family=Kanit%7CMerriweather" rel="stylesheet">
+  <!-- CUSTOM CSS -->
+  <link rel="stylesheet" href="{% static 'frontend/css/home.css' %}" />
+  <style type='text/css'>
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: 'Kanit', sans-serif;
+    }
+</style>
+<style type='text/css'>
+    @font-face {
+        font-family: 'Kanit', sans-serif;
+    }
+
+    body {
+        font-family: 'Kanit' !important;
+    }
+</style>
+  <title>{{ title }}</title>
+</head>
+
+<body class="body-wrapper">
+
+  {% include "header.html" %}
+
+  <section class="corn_1 text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-12">
+          <div class="content"><br>
+            <h2 class="text-font">โปรแกรมตรวจระดับความสุกและคุณประโยชน์ของผลไม้<br>บนเว็บแอพพลิเคชั่น</h2>
+          </div>
+        </div>
+        <div class="col-md-5 col-13">
+          <div class="content-img">
+            <img src="{% static 'frontend/IMG/home/foo4.png' %}" class="img-fluid" alt="Responsive image">
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <section class="type_corn">
+    <div class="container" style="padding:50px;">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-title">
+            <h2>ชนิดของผลไม้</h2>
+
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <!-- offer 01 -->
+        <div class="col-lg-12">
+          <div class="trending-ads-slide">
+            <div class="col-sm-12 col-lg-4">
+              <!-- product card -->
+              <div class="product-item bg-light">
+                <div class="card">
+                  <div class="thumb-content">
+                    <!-- <div class="price">$200</div> -->
+                    <img class="card-img-top img-fluid" src="{% static 'frontend/IMG/home/banana1.png' %}"
+                      alt="Card image cap" />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      กล้วยน้ำว้า
+                    </h3>
+                    <p class="card-text lineH">
+                      &nbsp; &nbsp; เป็นกล้วยพันธุ์พื้นบ้านของไทย เป็นผลไม้ล้มลุก เป็นกล้วยพันธุ์ผสมชนิดหนึ่ง
+                      เป็นกล้วยพันธุ์ผสมระหว่างกล้วยป่า กับกล้วยตานี มีลำต้นเดี่ยวตั้งตรง ลำต้นมีลักษณะกลม
+                      มีสีน้ำตาลปนเขียว
+                      ใบเป็นใบเลี้ยงเดี่ยว ใบเป็นแบบขนาน มีลักษณะแบนยาวใหญ่ มีสีเขียวแก่ ดอกจะออกเป็นช่อ
+                      จะมีปลีออกที่ปลายยอด
+                      มีเครือยาวมีหวีอยู่ จะมีผลเรียงอยู่ในหวีคล้ายพัด ผลอ่อนเปลือกมีสีเขียว ผลสุกเปลือกมีสีเหลือง
+                      มีรสชาติหวานหอม
+                    </p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <!-- product card -->
+              <div class="product-item bg-light">
+                <div class="card">
+                  <div class="thumb-content">
+                    <!-- <div class="price">$200</div> -->
+                    <img class="card-img-top img-fluid" src="{% static 'frontend/IMG/home/gavra.png' %}" alt="Card image cap" />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      ฝรั่ง
+                    </h3>
+                    <p class="card-text lineH">
+                      &nbsp; &nbsp;ฝรั่งเป็นไม้ยืนต้น สูง 3-10 เมตร ต้นเกลี้ยงมัน เปลือกต้นเรียบ ใบเดี่ยว
+                      กิ่งอ่อนเป็นสี่เหลี่ยม
+                      ยอดอ่อนมีขนสั้นๆ ใบเดี่ยว เรียงตรงข้าม รูปวงรีแกมขอบขนาน กว้าง 3-8 ซม. ยาว 6-14 ซม. ดอก
+                      เดี่ยวหรือช่อ 2-3 ดอก
+                      ออกที่ซอกใบ กลีบดอกสีขาว ร่วงง่าย มีเกสรตัวผู้จำนวนมาก ผลเป็นผลสด ผลดิบสีเขียว กินได้
+                      เมื่อสุกเป็นสีเหลืองเนื้อหนา แน่น
+                      กรอบหวานเหมาะแก่การบริโภคผลสด
+                    </p><br><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-12 col-lg-4">
+              <!-- product card -->
+              <div class="product-item bg-light">
+                <div class="card">
+                  <div class="thumb-content">
+                    <!-- <div class="price">$200</div> -->
+                    <img class="card-img-top img-fluid" src="{% static 'frontend/IMG/home/papaya1.png' %}"
+                      alt="Card image cap" />
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">
+                      มะละกอ
+                    </h3>
+                    <p class="card-text lineH">
+                      &nbsp; &nbsp; เป็นมะละกอสายพันธุ์หนึ่ง เป็นพืชล้มลุก เป็นผลไม้ชนิดหนึ่ง ลำต้นมีลักษณะกลมๆ
+                      ตรงใหญ่ ไม่มีแก่น ลำต้นอวบน้ำ ลำต้นมีตารอบๆ มีก้านใบล้อมรอบด้านบนต้น เปลือกต้นเรียบ
+                      แตกกิ่งก้านน้อย
+                      มียางขาวข้น มีรอยแผลเป็นของก้านใบที่หลุดร่วงไป มีสีเขียว ผลเป็นผลเดี่ยว มีลักษณะทรงกรวย ไม่ยาวมาก
+                      มีเปลือกหนาผิวเรียบ ผลดิบมีสีเขียว มีน้ำยางสีขาวอยู่ที่เปลือก ผลสุกมีสีเหลืองเข้ม
+                      เนื้อหนานุ่มฉ่ำน้ำ เนื้อมีสีเหลืองอมส้ม
+                     
+                    </p><br>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="problem">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title">
+            <h2>ประโยชน์ของผลไม้</h2>
+          </div>
+          <div class="row">
+            <div class="col-lg-4 offset-lg-0 offset-md-0  ">
+              <div class="category-block">
+                <div class="header">
+                  <!-- <h3 style="color:#836853;">ปัญหาสภาพดิน</h3> -->
+                  <h3>ประโยชน์ของกล้วยน้ำว้า</h3>
+                </div>
+                <div class="popSoil" data-container="body" data-toggle="popover">
+                  <img src="{% static 'frontend/IMG/home/3xroiNPi9r.jpg' %}" class="img-fluid" alt="Responsive image">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-0  offset-md-0 ">
+              <div class="category-block">
+                <div class="header">
+                  <h3>ประโยชน์ของฝรั่ง</h3>
+                </div>
+                <div class="popWater" data-container="body" data-toggle="popover">
+                  <img src="{% static 'frontend/IMG/home/1416937-20200410-141438.jpg' %}" class="img-fluid"
+                    alt="Responsive image">
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 offset-lg-0  offset-md-0 ">
+              <div class="category-block">
+                <div class="header">
+                  <h3>ประโยชน์ของมะละกอ</h3>
+                </div>
+                <div class="popInsect" data-container="body" data-toggle="popover">
+                  <img src="{% static 'frontend/IMG/home/xj.jpg' %}" class="img-fluid" alt="Responsive image">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <!-- tether js -->
+  <script src="{% static 'frontend/jquery-nice-select/js/jquery.nice-select.min.js' %}"></script>
+  <script src="{% static 'frontend/slick-carousel/slick/slick.min.js' %}"></script>
+  <!-- CUSTOM JS -->
+  <script type="text/javascript" src="{% static 'frontend/javascript/home.js' %}"></script>
+  <br>
+  <br>
+  <br>
+  {% include "footer.html" %}
+</body>
+
+</html>

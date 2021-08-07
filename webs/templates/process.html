@@ -1,0 +1,650 @@
+{% load static %}
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'frontend/bootstrap/css/bootstrap.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'frontend/css/process.css' %}"
+/>
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="{% static 'frontend/css/style.css' %}"
+/>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detect</title>
+    <!--Bootstrap-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Kanit%7CMerriweather"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{% static 'frontend/css/home.css' %}" />
+    <style>
+      body {
+        background-image: url("{% static "image/background.png" %}");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: right bottom;
+        background-color: #faf7f7;
+      }
+    </style>
+    <style type="text/css">
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        font-family: "Kanit", sans-serif;
+      }
+    </style>
+    <style type="text/css">
+      @font-face {
+        font-family: "Kanit", sans-serif;
+      }
+
+      body {
+        font-family: "Kanit" !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    {% include "header.html" %}
+    <section>
+      <div class="container">
+        <div class="row">
+          {% for x in allsend %} {% if x == 'Banana' %}
+          <div class="col-12 mt-5 d-flex justify-content-center">
+            <div
+              class="card"
+              style="width: 80%; padding: 20px; border-radius: 20px"
+            >
+              <center>
+                <img
+                  src="{% static 'banana/Banana.jpg' %}"
+                  class="imagebanana"
+                  alt="Banana"
+                />
+              </center>
+              <div class="card-body">
+                {% for y in fruit %} {% if y == 'banana is ripe' %}
+                <h1>กล้วยสุก</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; เป็นยาระบายอ่อนๆให้ผลดีกับคนที่มีอาการท้องผูก
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ช่วยเพิ่มกากใยในระบบทางเดินอาหาร
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; เป็นอาหารของแบ็คทีเรียในลำไส้
+                        ช่วยในการขับถ่ายได้เป็นอย่างดี
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% elif y == 'banana is barely_ripe' %}
+                <h1>กล้วยห่าม</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; มีโพแทสเซียมสูงมีผลดีกับผู้มีอาการท้องเสีย
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ช่วยหล่อลื่นลำไส้
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; เพิ่มกากใยในการขับถ่าย
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp;
+                        ออกฤทธิ์กระตุ้นให้ผนังกระเพาะอาหารสร้างเยื่อเมือกมากขึ้น
+                        <br />
+                        และ ช่วยเคลือบแผลในกระเพาะอาหาร
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% elif y == 'banana is under_ripe' %}
+                <h1>กล้วยดิบ</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; แก้โรคกระเพาะ
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; เคลือบรักษากระเพาะและลำไส้ป้องกันการติดเชื้อ
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ลดกรดในกระเพาะ
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% elif y == 'banana is barely_ripe' %}
+                <h1>กล้วยห่าม</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; มีโพแทสเซียมสูงมีผลดีกับผู้มีอาการท้องเสีย
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ช่วยหล่อลื่นลำไส้
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; เพิ่มกากใยในการขับถ่าย
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp;
+                        ออกฤทธิ์กระตุ้นให้ผนังกระเพาะอาหารสร้างเยื่อเมือกมากขึ้น
+                        <br />
+                        และ ช่วยเคลือบแผลในกระเพาะอาหาร
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% elif y == 'banana is very_ripe' %}
+                <h1>กล้วยงอม</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; เพิ่มภูมิต้านทานโรค
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; เพิ่มเซลเม็ดเลือดขาว
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; มีสาร TNF(Tumor Necrosis Factor)<br />
+                        มีความสามารถในการต่อสู้กับเซลล์ที่ผิดปกติ
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; เสริมภูมิคุ้มกันโรคหวัด
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% endif %} {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% elif x == 'Guava' %}
+          <div class="col-12 mt-5 d-flex justify-content-center">
+            <div class="card" style="width: 80%; padding: 20px">
+              <center>
+                <img
+                  src="{% static 'guava/Guava.jpg' %}"
+                  class="imageguava"
+                  alt="Guava"
+                />
+              </center>
+              <div class="card-body">
+                {% for y in fruit %} {% if y == 'guava is ripe' %}
+                <h1>ฝรั่งสุก</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ป้องกันการเกิดโรคหวัด
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ป้องกันเลือดออกตามไรฟัน
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ช่วยทำให้ขับถ่ายได้ง่ายเพราะมีเส้นใยสูง
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% elif y == 'guava is raw' %}
+                <h1>ฝรั่งดิบ</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; วิตามินซี และ วิตามินเอ ซึ่งมีมากกว่ามะนาวถึง 4
+                        เท่า
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ช่วยสมานแผลและบรรเทาอาหารเจ็บคอ
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ช่วยระงับกลิ่นปาก
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; รักษาแผลเรื้อรังเช่น น้ำกัดเท้า
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ผื่นคันจากผิวหนังที่ถูกใบไม้คัน
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% endif %} {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% elif x == 'Papaya' %}
+          <div class="col-12 mt-5 d-flex justify-content-center">
+            <div
+              class="card"
+              style="width: 80%; padding: 20px; border-radius: 20px"
+            >
+              <center>
+                <img
+                  src="{% static 'papaya/Papaya.jpg' %}"
+                  class="imagepapaya"
+                  alt="Papaya"
+                />
+              </center>
+              <div class="card-body">
+                {% for y in fruit %} 
+                {% if y == 'papaya is ripe' %}
+                <h1>มะละกอสุก</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ป้องกันการเกิดโรคหวัด
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ป้องกันเลือดออกตามไรฟัน
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ช่วยทำให้ขับถ่ายได้ง่ายเพราะมีเส้นใยสูง
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% elif y == 'papaya is raw' %}
+                <h1>มะละกอดิบ</h1>
+                <br />
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h2>
+                        <i class="fas fa-pencil-alt"></i>&nbsp;&nbsp;
+                        คุณประโยชน์
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ป้องกันการเกิดโรคหวัด
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ป้องกันเลือดออกตามไรฟัน
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-10">
+                      <h3>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -
+                        &nbsp; ช่วยทำให้ขับถ่ายได้ง่ายเพราะมีเส้นใยสูง
+                      </h3>
+                    </div>
+                  </div>
+                </div>
+                {% endif %} {% endfor %}
+              </div>
+            </div>
+          </div>
+          {% elif x == 'Not'%}
+          <div class="col-12 mt-5 d-flex justify-content-center">
+            <div class="card" style="width: 80%; padding: 20px">
+              <center>
+                <img
+                  src="{% static 'image_profile/thiraphong.jpg' %}"
+                  class=""
+                  alt=""
+                />
+              </center>
+              <div class="card-body">
+                <h1>รูปของคุณไม่ถูกต้องตามเงื่อนไข</h1>
+                <br />
+              </div>
+            </div>
+          </div>
+          {% endif %} {% endfor %}
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
+</html>
